@@ -1,0 +1,17 @@
+<!-- autofocuse : 페이지를 불러오자마자 원하는 요소에 마우스 커서 표시 가능 -->
+<!-- placeholder : 텍스트 입력할 때 힌트가 될 수 있도록 함 -->
+<!-- readonly : 수정 불가능!! / 읽기만 가능 -->
+<!-- required : 필수 필드에 필요한 내용이 채워졌는지 검사 -->
+<form>
+<fieldset>
+    <legend>신청자</legend>
+    <label class="reg" for ="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+    <label class="reg" for="uid">학번</label>
+    <input type="text" id="uid" placeholder="하이픈없이 입력">
+    <label class="reg" for="subj">영어회화(초급)</label>
+    <input type="text" id="subj" value="오전 9:00~11:00" readonly>
+    
+    <input type="submit" value="신청하기">
+</fieldset>
+</form>

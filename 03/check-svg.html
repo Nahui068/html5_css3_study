@@ -1,0 +1,16 @@
+<!-- 사용자의 브라우저가 svg파일을 지원하는지 여부를 테스트 해주는 툴 : Modernizr -->
+<head>
+    <meta charset="utf-8">
+    <title>Insert SVG</title>
+    <script src="modernizr-custom.js"></script>
+</head>
+
+<body>
+    <h1>SVG 이미지 삽입하기</h1>
+    <img src="images/muffin.svg">
+    <script>
+        if(!Modernizr.svg){ /* svg기능을 사용할 수 없을 경우 png파일로 대체 */
+            $("img").attr("src","images/muffin.png");
+        }
+    </script>
+</body>

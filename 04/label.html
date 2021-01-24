@@ -1,0 +1,22 @@
+<!-- <label>태그 : 폼 요소에 레이블 붙이기 => 입력창 옆에 '아이디'나 '비밀번호'처럼 붙여 놓은 텍스트 
+    폼 요소와 레이블 텍스트가 서로 연결 되어 있다는 것을 브라우저가 알 수 있음 -->
+<!-- 1) <label>아이디(6자이상)<input type="text" ...></label>
+     2) <label for="user-id">아이디(6자 이상)</label>
+        <input type="text" id="user-id"> -->
+
+<form action="login.php" method="post">
+    <ul>
+        <li>
+            <label for="id">아이디</label>
+            <input type="text" id="id">
+        </li>
+        <li>
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw">
+        </li>
+        <li>
+            <input type="submit" title="로그인" value="로그인">
+        </li>
+    </ul>
+
+</form>

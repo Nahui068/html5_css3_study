@@ -1,0 +1,26 @@
+<!-- 라디오 버튼과 체크박스에서 <label>태그를 사용!!
+    => 텍스트만 터치해도 라디오 버튼이나 체크박스가 선택되어 사용이 훨씬 쉬워짐 -->
+
+<form>
+    <!-- <label> 사용x -->
+    <h3>수강 분야(다수 선택 가능)</h3>
+    <ul>
+        <li><input type="checkbox" value="grm">문법</li>
+        <li><input type="checkbox" value="wr">작문</li>
+        <li><input type="checkbox" value="rd">독해</li>
+    </ul>
+    <!-- <label>사용 -->
+    <h3>수강 과목(1과목만 선택 가능)</h3>
+    <ul>
+        <li>
+            <label><input type="radio" name="subject" value="eng">영어회화</label>
+        </li>
+        <li>
+            <label><input type="radio" name="subject" value="ch">중국어회화</label>
+        </li>
+        <li>
+            <label><input type="radio" name="subject" value="jp">일어회화</label>
+        </li>
+
+    </ul>
+</form>
