@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .box{
+            position:absolute;
+            left:50px;
+            top:70px;
+            width:100px;
+            height:60px;
+            background:#fff;
+            border:2px solid green;
+            text-align:center;
+            line-height:60px;
+        }
+        /* 각 브라우저별로 완벽히 지원되지 않아 -webkit과 같은 브라우저 접두사 붙여야함 */
+        .box:hover{
+            -webkit-transform: rotate(15deg); /* 사파리, 크롬 등(웹키트 방식 브라우저) */
+            -moz-transform: rotate(15deg); /* 모질라, 파이어폭스 등(게코 방식 브라우저) */
+            -o-transform: rotate(15deg); /* 오페라 브라우저 */
+            -ms-transform: rotate(15deg); /* 마이크로소프트 인터넷 익스플로러 */
+            transform:rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Mouse Over</div>
+</body>
+</html>
